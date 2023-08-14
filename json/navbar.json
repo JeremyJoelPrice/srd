@@ -1,0 +1,37 @@
+{
+	"navbar items": [
+		{
+			"value": "Menu 1",
+			"type": "dropdown",
+			"dropdownOptions": [
+				{
+					"value": "Eldoria",
+					"href": "eldoria"
+				},
+				{
+					"value": "Fountain of Dreams",
+					"href": "fountain-of-dreams"
+				}
+			]
+		},
+		{
+			"value": "Menu 2",
+			"type": "dropdown",
+			"dropdownOptions": [
+				{
+					"value": "Fountain Of Dreams",
+					"href": "fountain-of-dreams"
+				},
+				{
+					"value": "Whispering Woods",
+					"href": "whispering-woods"
+				}
+			]
+		},
+		{
+			"value": "Eldoria",
+			"type": "link",
+			"href": "eldoria"
+		}
+	]
+}
