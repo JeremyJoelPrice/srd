@@ -35,7 +35,7 @@
     },
     {
       "type": "table",
-      "content": "name,colour,size,weight\nFrostberry,Blue,Small,0.2\nEmberroot,Red,Medium,0.5\nCrystalcarrot,Transparent,Medium,0.4\nGlimmerleaf,Green,Small,0.3\nAurora Onion,Purple,Medium,0.6\nStormvine,Silver,Long,0.8\nFlamepepper,Orange,Small,0.1"
+      "content": "Name,Colour,Size,Weight\nFrostberry,Blue,Small,0.2\nEmberroot,Red,Medium,0.5\nCrystalcarrot,Transparent,Medium,0.4\nGlimmerleaf,Green,Small,0.3\nAurora Onion,Purple,Medium,0.6\nStormvine,Silver,Long,0.8\nFlamepepper,Orange,Small,0.1"
     }
   ]
 }
