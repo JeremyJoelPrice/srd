@@ -36,6 +36,8 @@ function parseJsonAsHtml(json) {
         content = replaceKeywordsWithHyperlinks(content);
         articleHtml += `<p class="body-text">${content}</p>`;
         break;
+      case "table":
+        articleHtml += parseCsvAsHtmlTable(content);
     }
   });
 
@@ -53,6 +55,26 @@ function replaceKeywordsWithHyperlinks(bodyText) {
     );
   });
   return bodyText;
+}
+
+function parseCsvAsHtmlTable(csv) {
+  let html = "";
+
+  const rows = csv.split("\n");
+
+  for (let i = 0; i < rows.length; i++) {
+    html += `<tr>`;
+    rows[i].split(",").forEach((cell) => {
+      const cellTags =
+        i === 0
+          ? [`<th class="table__cell">`, "</th>"]
+          : [`<td class="table__cell">`, "</td>"];
+      html += `${cellTags[0]}${cell}${cellTags[1]}`;
+    });
+    html += `</tr>`;
+  }
+
+  return `<table class="table">${html}</table>`;
 }
 
 /*
