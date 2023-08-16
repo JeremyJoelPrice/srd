@@ -5,35 +5,43 @@ hyperlinks are dynamically added into the html by search-and-replace, using
 
 ## Conventions
 
--   BEM for all CSS selectors
+- BEM for all CSS selectors
 
--   Although BEM uses classes exclusively for styling, elements may be given an
-    `id` for the purposes of selecting them in JavaScript
+- Although BEM uses classes exclusively for styling, elements may be given an
+  `id` for the purposes of selecting them in JavaScript
 
--   `<a>` tags must be given a valid filename from `/json` as an `href`
-    property, and this should exclude the filetype, e.g.
-    `<a href="introduction">`, not `<a href="introduction.json">`.
+- `<a>` tags must be given a valid filename from `/json` as an `href`
+  property, and this should exclude the filetype, e.g.
+  `<a href="introduction">`, not `<a href="introduction.json">`.
 
--   `<a>` tags which appear in body text must also be given proper styling,
-    using the class `"link--styled"`
+- `<a>` tags which appear in body text must also be given proper styling,
+  using the class `"link--styled"`
 
--   All hyperlinks are described in `hyperlink-map.js`, and automatically
-    implemented into each article as it's loaded.
+- All hyperlinks are described in `hyperlink-map.js`, and automatically
+  implemented into each article as it's loaded.
 
--   All articles are stored as JSONs in the following format;
-    ```
-    {
-        "header": "header text",
-        "sections": [
-            {
-                "type": "subheader",
-                "content": "subheader text"
-            },
-            {
-                "type": "paragraph",
-                "content": "body text"
-            },
-            ...
-        ]
-    }
-    ```
+- All articles are stored as JSONs in the following format;
+  ```
+  {
+      "header": "header text",
+      "sections": [
+          {
+              "type": "subheader",
+              "content": "subheader text"
+          },
+          {
+              "type": "paragraph",
+              "content": "body text"
+          },
+          ...
+      ]
+  }
+  ```
+
+## TODO:
+
+- implement tables
+- implement images
+- implement lists (unordered/ordered)
+- enforce consistent naming convention for top level containers
+- table of contents (maybe)
