@@ -1,141 +1,148 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  color: var(--text-color);
-  font-family: Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	color: var(--text-color);
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 body {
-  background-color: var(--background-color);
+	background-color: var(--background-color);
 }
 
 :root {
-  /* --primary-color: #dee4eb; */
-  --primary-color: #bdc9d6;
-  --text-color: #171717;
-  /* --highlight-color: #7a93ac; */
-  --hyperlink-color: #7a93ac;
-  --highlight-color: #dee4eb;
-  --background-color: #fbfbf6;
-  --article-width: 60%;
+	/* --primary-color: #dee4eb; */
+	--primary-color: #bdc9d6;
+	--text-color: #171717;
+	/* --highlight-color: #7a93ac; */
+	--hyperlink-color: #7a93ac;
+	--highlight-color: #dee4eb;
+	--background-color: #fbfbf6;
+	--article-width: 60%;
 }
 
 /* navbar */
 .navbar__img {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
 }
 
 .navbar {
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  padding: 0 30%;
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	padding: 0 30%;
 
-  background-color: var(--primary-color);
+	background-color: var(--primary-color);
 }
 
 .navbar--sticky {
-  position: fixed;
-  width: 100%;
-  top: 0;
+	position: fixed;
+	width: 100%;
+	top: 0;
 }
 
 .navbar__header {
-  padding: 15px;
-  font-size: 26pt;
-  letter-spacing: 1px;
+	padding: 15px;
+	font-size: 26pt;
+	letter-spacing: 1px;
 }
 
 .navbar__header:hover {
-  cursor: pointer;
-  background-color: #f1f1f1;
+	cursor: pointer;
+	background-color: #f1f1f1;
 }
 
 .navbar__dropdown-container {
-  position: relative;
-  display: inline-block;
+	position: relative;
+	display: inline-block;
 }
 
 .navbar__dropdown {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
 }
 
 .navbar__dropdown--show {
-  display: block;
+	display: block;
 }
 
 .navbar__dropdown-option {
-  display: block;
-  padding: 15px;
-  font-size: 18pt;
-  color: var(--text-color);
-  border-top: var(--text-color) solid 2pt;
+	display: block;
+	padding: 15px;
+	font-size: 18pt;
+	color: var(--text-color);
+	border-top: var(--text-color) solid 2pt;
 }
 
 .navbar__dropdown-option:hover {
-  background-color: var(--primary-color);
+	background-color: var(--primary-color);
 }
 
 /* article */
 .article {
-  max-width: var(--article-width);
-  margin: 0 auto;
+	max-width: var(--article-width);
+	margin: 0 auto;
 }
 
 .header-text {
-  color: var(--text-color);
-  font-size: 40pt;
-  margin: 50px 0;
-  border-bottom: var(--text-color) solid 1pt;
+	color: var(--text-color);
+	font-size: 40pt;
+	margin: 50px 0;
+	border-bottom: var(--text-color) solid 1pt;
 }
 
 .subheader-text {
-  color: var(--text-color);
-  font-size: 28pt;
-  margin: 50px 0;
+	color: var(--text-color);
+	font-size: 28pt;
+	margin: 50px 0;
 }
 
 .body-text {
-  color: var(--text-color);
-  font-size: 22pt;
-  line-height: 2em;
-  word-spacing: 2px;
+	color: var(--text-color);
+	font-size: 22pt;
+	line-height: 2em;
+	word-spacing: 2px;
 }
 
 .table {
-  border-collapse: collapse;
-  width: 100%;
-  margin: 60px 0;
+	border-collapse: collapse;
+	width: 100%;
+	margin: 60px 0;
 }
 
 .table__cell {
-  border: var(--text-color) 1px solid;
-  color: var(--text-color);
-  font-size: 22pt;
-  line-height: 2em;
-  word-spacing: 2px;
-  padding: 0 10px;
-  text-align: center;
+	border: var(--text-color) 1px solid;
+	color: var(--text-color);
+	font-size: 22pt;
+	line-height: 2em;
+	word-spacing: 2px;
+	padding: 0 10px;
+	text-align: center;
+}
+
+.article__image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
 }
 
 /* event listeners */
 .link {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .link--styled {
-  color: var(--hyperlink-color);
-  text-decoration: underline;
+	color: var(--hyperlink-color);
+	text-decoration: underline;
 }
